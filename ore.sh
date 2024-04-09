@@ -201,12 +201,12 @@ echo "使用 'screen -r $session_name' 命令重新连接到此会话。"
 
 # 查询奖励
 function view_rewards() {
-    ore --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json rewards
+    ./orenew --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json rewards
 }
 
 # 领取奖励
 function claim_rewards() {
-    ore --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json claim
+    ./orenew --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json claim
 }
 
 # 运行情况
