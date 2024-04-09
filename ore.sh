@@ -206,7 +206,7 @@ function view_rewards() {
 
 # 领取奖励
 function claim_rewards() {
-    ./orenew --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json claim
+    ./orenew --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json --priority-fee 50000000 claim
 }
 
 # 运行情况
